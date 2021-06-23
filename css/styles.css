@@ -6,8 +6,29 @@
   --hero-button-color: #188ce8;
   --font-color: #2f303a;
 }
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.section {
+  padding-top: 0;
+  padding-bottom: 94px;
+}
+
+.section-no-padding {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 button {
@@ -24,14 +45,16 @@ body {
 
 /*Header*/
 
-.web {
-  color: var(--accent-color);
+.container-main-nav {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
+  margin-right: auto;
   font-family: Raleway;
   font-style: 400;
-  letter-spacing: 0.03em;
+  letter-spacing: inherit;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -39,12 +62,29 @@ body {
   color: var(--primary-text-color);
 }
 
+.web {
+  color: var(--accent-color);
+}
+
 .logo:hover,
 .logo:focus {
   color: var(--accent-color);
 }
 
-.nav-elements {
+.navigation {
+  display: flex;
+  margin-left: 91px;
+}
+
+.item {
+  margin-right: 50px;
+}
+
+.navigation > .item:last-child {
+  margin-right: 0;
+}
+
+.navigation .nav-elements {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -56,6 +96,11 @@ body {
 .nav-elements:hover,
 .nav-elements:focus {
   color: var(--accent-color);
+}
+
+.contacts {
+  display: flex;
+  margin-bottom: auto;
 }
 
 .contact-header {
@@ -72,11 +117,9 @@ body {
 
 /*Hero*/
 
-.hero-section {
-  background-color: var(--font-color);
-}
-
-.theme {
+.hero {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -84,14 +127,20 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  padding-bottom: 94px;
 }
 
 .hero-button {
+  display: inline-block;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  border-radius: 4px;
+  padding: 11px 32px;
+  border-color: transparent;
+  min-width: 200px;
 }
 
 .hero-button:hover,
@@ -101,12 +150,18 @@ body {
 
 /*Main advantages*/
 
+.advantages-list {
+  display: flex;
+}
+
 .advantages {
+  margin-top: 0;
   font-style: 400;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .advantages-details {
@@ -117,6 +172,19 @@ body {
 
 /*Our activity*/
 
+.our-activity {
+  display: flex;
+  padding-bottom: 94px;
+}
+
+.image-list {
+  margin-right: 30px;
+}
+
+.our-activity > .image-list:last-child {
+  margin-right: 0;
+}
+
 .title {
   font-weight: 700;
   font-size: 36px;
@@ -124,18 +192,28 @@ body {
   text-align: center;
 }
 
-/*Наша команда*/
+/*Our company*/
+
+.command {
+  display: flex;
+}
+
+.command > .image-list:last-child {
+  margin-right: 0;
+}
 
 .name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+  text-align: center;
 }
 
 .profession {
   font-size: 16px;
   line-height: 19px;
   color: var(--paragraph-text-color);
+  text-align: center;
 }
 
 /*Footer*/
@@ -188,6 +266,9 @@ footer {
   line-height: 1.6;
   text-align: center;
   letter-spacing: inherit;
+  padding: 6px 22px;
+  border-color: 1px transparent;
+  text-align: center;
 }
 
 .project-button:hover,
