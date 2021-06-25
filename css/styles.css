@@ -6,8 +6,35 @@
   --hero-button-color: #188ce8;
   --font-color: #2f303a;
 }
-ul {
-  list-style-type: none;
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
+.item {
+  list-style: none;
 }
 
 button {
@@ -22,13 +49,55 @@ body {
   letter-spacing: 0.03em;
 }
 
+.nav-list .current {
+  color: var(--accent-color);
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /*Header*/
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.contact-list {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
 
 .web {
   color: var(--accent-color);
 }
 
 .logo {
+  margin-right: 90px;
   font-family: Raleway;
   font-style: 400;
   letter-spacing: 0.03em;
@@ -48,14 +117,22 @@ body {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  text-decoration: none;
   cursor: pointer;
   color: var(--primary-text-color);
+  text-decoration: none;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .nav-elements:hover,
 .nav-elements:focus {
   color: var(--accent-color);
+}
+
+.contact-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .contact-header {
@@ -76,21 +153,30 @@ body {
   background-color: var(--font-color);
 }
 
+.hero-section {
+  text-align: center;
+  color: var(--primary-white-color);
+}
+
 .theme {
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  color: var(--primary-white-color);
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
 .hero-button {
+  cursor: pointer;
+  border-radius: 4px;
+  border-color: transparent;
+  width: 200px;
+  padding: 10px 32px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
-  color: var(--primary-white-color);
+  color: inherit;
   background-color: var(--accent-color);
 }
 
@@ -101,7 +187,21 @@ body {
 
 /*Main advantages*/
 
+.advantages-section {
+  background-color: #e5e5e5;
+}
+
+.advantages-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.advantages-list {
+  display: flex;
+  align-items: center;
+}
+
 .advantages {
+  margin-bottom: 10px;
   font-style: 400;
   font-weight: 700;
   font-size: 14px;
@@ -113,26 +213,54 @@ body {
   font-size: 14px;
   line-height: 2;
   color: var(--paragraph-text-color);
+  text-transform: none;
 }
 
 /*Our activity*/
 
+.activity-section {
+  background-color: #e5e5e5;
+}
+
+.activity-list {
+  display: flex;
+  align-items: center;
+}
+
+.activity-section {
+  padding-top: 0;
+}
+
 .title {
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
 }
 
-/*Наша команда*/
+/*Our command*/
+
+.coomand-list {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.command-item:not(:last-child) {
+  margin-right: 30px;
+}
 
 .name {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
 }
 
 .profession {
+  text-align: center;
   font-size: 16px;
   line-height: 19px;
   color: var(--paragraph-text-color);
@@ -145,6 +273,7 @@ footer {
 }
 
 .logo-footer {
+  margin-bottom: 20px;
   font-family: Raleway;
   font-style: 400;
   letter-spacing: 0.03em;
@@ -167,6 +296,7 @@ footer {
 }
 
 .contact-footer {
+  margin-top: 10px;
   font-family: Roboto;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
