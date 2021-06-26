@@ -11,18 +11,16 @@ h1,
 h2,
 h3,
 p {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
 
-ul,
-ol {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-img {
+.img {
   display: block;
 }
 
@@ -75,6 +73,7 @@ body {
 .header-container {
   display: flex;
   align-items: center;
+  border: 1px solid #ececec;
 }
 
 .nav-list {
@@ -106,6 +105,7 @@ body {
   line-height: 1.19;
   text-decoration: none;
   color: var(--primary-text-color);
+  padding: 24px;
 }
 
 .logo:hover,
@@ -120,6 +120,7 @@ body {
   cursor: pointer;
   color: var(--primary-text-color);
   text-decoration: none;
+  padding: 32px;
 }
 
 .nav-item:not(:last-child) {
@@ -151,6 +152,8 @@ body {
 
 .hero-section {
   background-color: var(--font-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-section {
@@ -187,16 +190,13 @@ body {
 
 /*Main advantages*/
 
-.advantages-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .advantages-section {
   background-color: #e5e5e5;
 }
 
 .advantages-list {
+  display: flex;
+  flex-direction: wrap;
   margin-left: -30px;
   margin-right: -30px;
   align-items: center;
@@ -290,6 +290,8 @@ body {
 
 footer {
   background-color: var(--font-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .logo-footer {
@@ -333,20 +335,31 @@ footer {
 .projects-list {
   display: flex;
   text-align: center;
+  justify-content: center;
 }
 
 .our-projects-list {
   display: flex;
   flex-wrap: wrap;
+  flex-basis: calc (100% / 3 - 30px);
   margin-left: -30px;
   margin-right: -30px;
 }
 
 .projects-item {
   padding: 6px 22px;
-  border-radius: 4px;
-  background: #f5f4fa;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.project-button {
   border-color: transparent;
+  border-radius: 4px;
+  padding: 6px 22px;
+  margin-right: 8px;
+  flex-basis: calc(100% - 40px) / 5;
+  margin-left: 8px;
+  margin-left: 8px;
 }
 
 .our-projects-item {
@@ -380,4 +393,9 @@ footer {
   font-size: 16px;
   line-height: 1.8;
   color: var(--paragraph-text-color);
+}
+
+.card-content {
+  padding: 20px 24px;
+  box-shadow: tomato;
 }
