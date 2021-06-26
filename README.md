@@ -1,3 +1,3 @@
-# goit-markup-hw-02
+# goit-markup-hw-03
 Репозиторий для тренировки работы с системами контроля версий
-https://trinetry.github.io/goit-markup-hw-02/
+https://trinetry.github.io/goit-markup-hw-03/
