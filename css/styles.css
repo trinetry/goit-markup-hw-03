@@ -70,7 +70,7 @@ body {
 
 .header {
   border-bottom: 1px solid;
-  }
+}
 
 .navigation {
   display: flex;
@@ -80,7 +80,7 @@ body {
 .header-container {
   display: flex;
   align-items: center;
-  }
+}
 
 .nav-list {
   display: flex;
@@ -273,10 +273,8 @@ body {
 }
 
 .command-card {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  border-radius: 4px;
-  overflow: hidden;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .name {
@@ -407,5 +405,5 @@ body {
 .card-content {
   padding: 20px 24px;
   border: 1px solid;
-  border-top: none
+  border-top: none;
 }
