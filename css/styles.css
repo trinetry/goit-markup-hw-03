@@ -69,9 +69,8 @@ body {
 /*Header*/
 
 .header {
-  border-bottom-style: solid;
-  border-color: #ececec;
-}
+  border-bottom: 1px solid;
+  }
 
 .navigation {
   display: flex;
@@ -201,10 +200,6 @@ body {
 
 /*Main advantages*/
 
-/* .advantages-section {
-  background-color: #e5e5e5;
-} */
-
 .advantages-list {
   display: flex;
   flex-direction: wrap;
@@ -274,8 +269,7 @@ body {
 .command-item {
   flex-basis: calc(100% - 120px) / 4;
   margin-left: 30px;
-  border-style: solid;
-  border-color: #ececec;
+  border: 1px solid;
 }
 
 .command-card {
@@ -412,6 +406,5 @@ body {
 
 .card-content {
   padding: 20px 24px;
-  border-style: solid;
-  border-color: #ececec;
+  border-style: 1px solid;
 }
